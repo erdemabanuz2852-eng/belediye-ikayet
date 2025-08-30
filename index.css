@@ -1,0 +1,56 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --background-color: #ecf0f1;
+  --surface-color: #ffffff;
+  --text-color: #34495e;
+  --light-gray-color: #bdc3c7;
+  --status-new: #3498db;
+  --status-inprogress: #f39c12;
+  --status-completed: #2ecc71;
+  --danger-color: #e74c3c;
+  --font-family: 'Roboto', sans-serif;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}--- START OF FILE index.html ---
+
+<!doctype html>
+<html>
+  <head>
+    <title>Belediye Şikayet Yönetim Sistemi</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+{
+  "imports": {
+    "lit/": "https://esm.sh/lit@^3.3.0/",
+    "lit": "https://esm.sh/lit@^3.3.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.16.0"
+  }
+}
+</script>
+  </head>
+  <body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
